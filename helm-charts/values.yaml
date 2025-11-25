@@ -1,18 +1,14 @@
 replicaCount: 1
-
 image:
   repository: image-registry.openshift-image-registry.svc:5000/webhook-app/frontend
   tag: latest
   pullPolicy: Always
-
 service:
   type: ClusterIP
   port: 8080
-
 route:
   enabled: true
-  host: ""    # opcional: webhook-frontend.apps.cluster.example.com
-
+  host: "" # opcional: webhook-frontend.apps.cluster.example.com
 resources:
   limits:
     cpu: 200m
@@ -20,4 +16,3 @@ resources:
   requests:
     cpu: 50m
     memory: 128Mi
-
