@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: image-registry.openshift-image-registry.svc:5000/webhook-app/frontend
+  repository: image-registry.openshift-image-registry.svc:5000/webhook-app/webhook-app-frontend
   tag: latest
   pullPolicy: Always
 
