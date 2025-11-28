@@ -1,7 +1,7 @@
 replicaCount: 1
 image:
   repository: image-registry.openshift-image-registry.svc:5000/webhook-app/webhook-app-frontend
-  tag: latest
+  tag: 4.0.0
   pullPolicy: Always
 service:
   type: ClusterIP
