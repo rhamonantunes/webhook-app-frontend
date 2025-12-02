@@ -1,7 +1,7 @@
 replicaCount: 1
 image:
-  repository: hylang:0.10
-  tag: 1.0.10
+  repository: hylang
+  tag: 0.10
   pullPolicy: Always
 service:
   type: ClusterIP
