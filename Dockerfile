@@ -16,9 +16,6 @@ RUN mkdir -p /var/cache/nginx/client_temp \
     /var/cache/nginx/proxy_temp \
     && chmod -R 777 /var/cache/nginx /etc/nginx /usr/share/nginx
 
-## Test ACS
-RUN apk add --no-cache curl
-
 # Copia build do React
 COPY --from=build /app/build /usr/share/nginx/html
 
